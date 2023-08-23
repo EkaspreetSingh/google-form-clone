@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id = "head">
+        <h1>Assignment Task</h1>
+        <p>The name and photo associated with your Google Account will be recorded when you upload files and submit this form. Your email address is not part of your response.</p>
+    </div>
+    <form id="custom-form">
+        <!-- Option Field -->
+        <div class="container">
+            <label>MCQ:<span style="color: rgb(184, 6, 6);">*</span></label><br><br>
+            <input type="radio" id="option1" name="option" value="Option 1">
+            <label for="option1">Option 1</label><br>
+            <input type="radio" id="option2" name="option" value="Option 2">
+            <label for="option2">Option 2</label><br>
+            <input type="radio" id="option3" name="option" value="Option 3">
+            <label for="option3">Option 3</label><br>
+        </div>
+
+        <!-- Checkbox Field -->
+        <div class="container">
+            <label>Checkbox Field:<span style="color: rgb(184, 6, 6);">*</span></label><br><br>
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="Checkbox 1">
+            <label for="checkbox1">Checkbox 1</label><br>
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="Checkbox 2">
+            <label for="checkbox2">Checkbox 2</label><br>
+            <input type="checkbox" id="checkbox3" name="checkbox2" value="Checkbox 3">
+            <label for="checkbox3">Checkbox 3</label><br>
+        </div>
+
+        <!-- Text Input -->
+        <div class="container">
+            <label for="text-input">Short Answer:<span style="color: rgb(184, 6, 6);">*</span></label><br><br>
+            <input type="text" id="text-input" name="text-input" required><br>
+        </div>
+
+        <div class="container">
+            <label for="text-input">Paragraph:<span style="color: rgb(184, 6, 6);">*</span></label><br><br>
+            <input type="text" id="text-input" name="text-input" required><br>
+        </div>
+
+        <!-- File Upload -->
+        <div class="container">
+            <label for="file-upload">File Upload:<span style="color: rgb(184, 6, 6);">*</span></label><br><br>
+            <input type="file" id="file-upload" name="file-upload" required><br>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="container">
+            <label for="dropdown">Dropdown:<span style="color: rgb(184, 6, 6);">*</span></label><br><br>
+            <select id="dropdown" name="dropdown">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+            </select><br>
+        </div>
+
+        <!-- Linear Scale -->
+        <div class="container">
+            <label for="linear-scale">Linear Scale:<span style="color: rgb(184, 6, 6);">*</span></label><br><br>
+            <input type="range" id="linear-scale" name="linear-scale" min="1" max="10"><br>
+        </div>
+
+        <!-- Multi-choice Grid -->
+        <div class="container">
+
+            <fieldset>
+                <legend>Multi-choice Grid:<span style="color: rgb(184, 6, 6);">*</span></legend><br>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Option 1</th>
+                        <th>Option 2</th>
+                        <th>Option 3</th>
+                    </tr>
+                    <tr>
+                        <td>Row 1</td>
+                        <td><input type="radio" name="multi-choice-row1" value="Option 1"></td>
+                        <td><input type="radio" name="multi-choice-row1" value="Option 2"></td>
+                        <td><input type="radio" name="multi-choice-row1" value="Option 3"></td>
+                    </tr>
+                    <tr>
+                        <td>Row 2</td>
+                        <td><input type="radio" name="multi-choice-row2" value="Option 1"></td>
+                        <td><input type="radio" name="multi-choice-row2" value="Option 2"></td>
+                        <td><input type="radio" name="multi-choice-row2" value="Option 3"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+
+        <!-- Checkbox Grid -->
+        <div class="container">
+
+            <fieldset>
+                <legend>Checkbox Grid:<span style="color: rgb(184, 6, 6);">*</span></legend><br>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Option 1</th>
+                        <th>Option 2</th>
+                        <th>Option 3</th>
+                    </tr>
+                    <tr>
+                        <td>Row 1</td>
+                        <td><input type="checkbox" name="checkbox-row1-option1" value="Option 1"></td>
+                        <td><input type="checkbox" name="checkbox-row1-option2" value="Option 2"></td>
+                        <td><input type="checkbox" name="checkbox-row1-option3" value="Option 3"></td>
+                    </tr>
+                    <tr>
+                        <td>Row 2</td>
+                        <td><input type="checkbox" name="checkbox-row2-option1" value="Option 1"></td>
+                        <td><input type="checkbox" name="checkbox-row2-option2" value="Option 2"></td>
+                        <td><input type="checkbox" name="checkbox-row2-option3" value="Option 3"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="container" id = "foot">
+            <input type="submit" value="Submit">
+            <input type="button" value="Clear Form" id="clear-form-button">
+        </div>
+    </form>
+
+    <br><br><br>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
